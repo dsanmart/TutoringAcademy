@@ -650,6 +650,7 @@ https://templatemo.com/tm-516-known
     text-align: left;
   }
 
+
   #courses .col-md-4,
   #testimonial .col-md-4 {
     display: block;
@@ -906,8 +907,10 @@ https://templatemo.com/tm-516-known
     .team-thumb,
     .footer-info {
       margin-bottom: 50px;
+      
     }
 
+  
     .contact-image {
       margin-top: 50px;
     }

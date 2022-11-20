@@ -13,6 +13,7 @@ https://templatemo.com/tm-516-known
     font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
     padding-top: 70px;
+    width: auto;
   }
 
 
@@ -95,15 +96,19 @@ https://templatemo.com/tm-516-known
   }
 
   .section-title {
+    padding-top: 10px;
     padding-bottom: 40px;
+    color: rgb(1, 1, 1);
   }
 
   .section-title h2 {
     margin: 0;
+    color: #fff;
   }
 
   .section-title small {
     display: block;
+    color: #fff;
   }
 
   .overlay {
@@ -164,7 +169,7 @@ https://templatemo.com/tm-516-known
 
   #team,
   #testimonial {
-    background: #ffffff;
+    background-image:url("../images/circle-scatter-haikei.svg") ;
   }
 
   #team, 
@@ -339,6 +344,8 @@ https://templatemo.com/tm-516-known
       HOME  & SLIDER            
   -----------------------------------------*/
 
+
+
   #home {
     padding: 0;
   }
@@ -405,10 +412,18 @@ https://templatemo.com/tm-516-known
       FEATURE              
   -----------------------------------------*/
 
+ /*---------------------------------------
+      waves              
+  -----------------------------------------*/
+ 
+
   .feature-thumb {
     border: 1px solid #f0f0f0;
     padding: 2em 2em;
     text-align: center;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 2px 5px 5px #494949;
   }
 
   .feature-thumb span {
@@ -429,6 +444,45 @@ https://templatemo.com/tm-516-known
     padding-left: 10px;
     text-align: center;
   }
+  .feature-thumb{
+    -webkit-animation: feature-thumb 2s both;
+    -moz-animation: feature-thumb 2s both;
+    -o-animation: feature-thumb 2s both;
+    animation: feature-thumb 2s both;
+  }
+  @-webkit-keyframes feature-thumb {
+    0%{
+      -webkit-transform: translateX(-100px);
+    }
+    100%{
+      -webkit-transform: translateX(0px);
+    };
+  }
+  @-moz-keyframes feature-thumb {
+    0%{
+      -webkit-transform: translateX(-100px);
+    }
+    100%{
+      -webkit-transform: translateX(0px);
+    };
+
+  };
+  @-o-keyframes feature-thumb{
+    0%{
+      -webkit-transform: translateX(-100px);
+    }
+    100%{
+      -webkit-transform: translateX(0px);
+    };
+  };
+  @keyframes feature-thumb {
+    0%{
+      -webkit-transform: translateX(-100px);
+    }
+    100%{
+      -webkit-transform: translateX(0px);
+    };
+  }; 
 
 
 
@@ -466,12 +520,18 @@ https://templatemo.com/tm-516-known
   /*---------------------------------------
       TEAM              
   -----------------------------------------*/
-
+  .row{
+    margin: 0px;
+    padding:  0px;
+    top: 0%;
+  }
   .team-thumb {
-    background: #ffffff;
+    background: #f7f7f7;
     position: relative;
     overflow: hidden;
     text-align: left;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px #494949;
   }
 
   .team-info {
@@ -480,6 +540,7 @@ https://templatemo.com/tm-516-known
 
   .team-image img {
     width: 100%;
+    
   }
 
   .team-thumb .social-icon {
@@ -495,23 +556,31 @@ https://templatemo.com/tm-516-known
   .team-info h3 {
     margin: 0;
   }
-
+  /*---------------------------------------
+    JOIN             
+  -----------------------------------------*/
+  .join{
+    padding-bottom: 20px;
+  }
 
   /*---------------------------------------
       COURSES             
   -----------------------------------------*/
-
+  #courses{
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
   #courses .section-title {
     text-align: center;
   }
 
   #courses .owl-theme .owl-nav {
-    margin-top: 30px;
+    margin-top: 45px;
   }
 
   #courses,
   #testimonial {
-    background: #f9f9f9;
+    background: #259dd4;
   }
 
   #courses, 
@@ -520,9 +589,9 @@ https://templatemo.com/tm-516-known
   }
 
   #courses .owl-theme .owl-nav [class*=owl-] {
-    border-radius: 2px;
+    border-radius: 7px;
     font-size: 16px;
-    width: 30px;
+    width: 50px;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -530,8 +599,12 @@ https://templatemo.com/tm-516-known
   }
 
   .courses-thumb {
+    
     background: #ffffff;
+    border-radius: 20px;
+    height: 500px;
     position: relative;
+    
   }
 
   .courses-top {
@@ -637,7 +710,34 @@ https://templatemo.com/tm-516-known
     font-weight: bold;
   }
 
+  /*---------------------------------------
+      JOIN             
+  -----------------------------------------*/
+  .animation-bubl2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+  }
+  .animation-buble h1{
+    padding-left: 100px;
+    color: #1794d2;
+  }
+  .flip{
+    right: 7100px;
+    transform: rotate(180deg);
+  }
+
+
+  #Join-course{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1 1 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 
   /*---------------------------------------
       TESTIMONIAL             
@@ -680,7 +780,7 @@ https://templatemo.com/tm-516-known
   .tst-image img {
     border-radius: 50px;
     width: 60px !important;
-    height: 60px;
+    height: 50px;
     margin-right: 15px;
   }
 
@@ -757,7 +857,7 @@ https://templatemo.com/tm-516-known
 
   footer {
     background: #252020;
-    padding: 120px 0;
+    padding: 10px 0;
   }
 
   footer .section-title {
@@ -906,6 +1006,7 @@ https://templatemo.com/tm-516-known
     .team-thumb,
     .footer-info {
       margin-bottom: 50px;
+      background-color: ;
     }
 
     .contact-image {
