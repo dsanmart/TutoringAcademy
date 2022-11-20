@@ -713,10 +713,30 @@ https://templatemo.com/tm-516-known
   /*---------------------------------------
       JOIN             
   -----------------------------------------*/
+  .animation-bubl2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  #Join{
-    margin: 0%;
-    padding: 0%;
+  }
+  .animation-buble h1{
+    padding-left: 100px;
+    color: #1794d2;
+  }
+  .flip{
+    right: 7100px;
+    transform: rotate(180deg);
+  }
+
+
+  #Join-course{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1 1 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   /*---------------------------------------
