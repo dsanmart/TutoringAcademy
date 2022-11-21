@@ -247,7 +247,7 @@ https://templatemo.com/tm-516-known
     animation: spinner .9s linear infinite;
   }
 
-  @-webkit-@keyframes spinner {
+  @-webkit-keyframes spinner {
     to {transform: rotate(360deg);}
   }
 
@@ -1006,7 +1006,6 @@ https://templatemo.com/tm-516-known
     .team-thumb,
     .footer-info {
       margin-bottom: 50px;
-      background-color: ;
     }
 
     .contact-image {
