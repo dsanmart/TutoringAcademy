@@ -122,7 +122,10 @@
                } else if (document.aceitform.bachelor.value == "BIE") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[1]);
                } else if (document.aceitform.bachelor.value == "BIR") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
