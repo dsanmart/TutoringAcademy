@@ -172,7 +172,9 @@
                if (document.aceitform.course.value.length > 1 && document.aceitform.bachelor.value.length > 1) {
                     var bachelor = document.aceitform.bachelor.value
                     var course = document.aceitform.course.value
-                    var link1 = "https://api.whatsapp.com/send?text=Hi there, I do the bachelor of " + bachelor + " and I'm Interested in the course of " + course + " .&phone=0034626524367"
+                    
+                    
+                    var link1 = "https://wa.me/34681402402?text=Hi%20there,%20I%20do%20the%20bachelor%20of%20" + bachelor + "%20and%20Im%20Interested%20in%20the%20course%20of%20" + course
                     window.location.href = link1
                }
           }
@@ -326,7 +328,7 @@
           </div>
      </section>
 
-     <img src="./images/wave-haikei.svg" alt="My Happy SVG" />
+     <img src="./images/wave-haikei.svg" alt="My Happy SVG" style="width: 100%;"  />
 
      <!-- Courses -->
      <section id="courses">
@@ -606,7 +608,7 @@
                     </div>
                </div>
      </section>
-     <img src="./images/wave-haikei.svg" alt="My Happy SVG" style="transform:rotate(180deg);" />
+     <img src="./images/wave-haikei.svg" alt="My Happy SVG" style="transform:rotate(180deg); width: 100%;" />
      <!-- TEAM -->
      <section id="team">
           <div class="container">
@@ -700,7 +702,6 @@
           </div>
           <div class="forme">
                <div class="col-sm-12">
-                    <br><br><br>
                     <form action="/" method="POST" id="aceitform" name="aceitform">
                          <div class="col-sm-12">
                               <label for="name"> Full Name:</label>
@@ -726,14 +727,16 @@
                                    <option value="" selected="" required>Select a course</option>
                               </select>
                               <br><br>
+                              <div style="padding-bottom: 10%;">
                               <textarea class="form-control" rows="6" placeholder="Tell us any additional information"
-                                   name="message" style="height: 50px"></textarea>
-                         </div>
-
+                                   name="message" style="height: 50px;"></textarea>
+                              </div>
                          <div class="col-sm-12">
-                              <br><br>
-                              <div id="submit"><a onclick="sendwp()"> submit </a></div>
+                              <div id="sumbitnext">
+                              <a id="submit" onclick="sendwp()"> submit </a>
+                              </div>
                          </div>
+                    </div>
 
                     </form>
                </div>
