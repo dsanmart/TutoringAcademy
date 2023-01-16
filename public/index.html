@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--test-->
 
 <head>
 
@@ -102,43 +101,166 @@
                     MMBA.text = "Mathematics for Management and Business Analytics";
                     var AMB = document.createElement("option");
                     AMB.text = "Applied Business Mathematics";
-
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(PF, document.getElementById("course")[0]);
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
                     document.getElementById("course").add(MMBA, document.getElementById("course")[2]);
                     document.getElementById("course").add(AMB, document.getElementById("course")[3]);
+                    document.getElementById("course").add(other, document.getElementById("course")[4]);
 
                } else if (document.aceitform.bachelor.value == "BDBA") {
                     var FSR = document.createElement("option");
                     FSR.text = "Fundamentals of stats in R";
-                    var ADS = document.createElement("option");
-                    ADS.text = "Algorithms and Data Structures";
-
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var PF = document.createElement("option");
+                    PF.text = "Python Fundamentals";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
                     document.getElementById("course").add(FSR, document.getElementById("course")[0]);
-                    document.getElementById("course").add(ADS, document.getElementById("course")[1]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[1]);
+                    document.getElementById("course").add(PF, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BBABIR") {
                     var FSP = document.createElement("option");
                     FSP.text = "Fundamentals of statistics in Python";
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(FSP, document.getElementById("course")[0]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BIE") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     var Econ = document.createElement("option");
                     Econ.text = "Econometrics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     document.getElementById("course").add(Econ, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BIR") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     var FSPD = document.createElement("option");
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    document.getElementById("course").add(Econ, document.getElementById("course")[2]);
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
                } else if (document.aceitform.bachelor.value == "BDA") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     var FSPD = document.createElement("option");
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+               } else if (document.aceitform.bachelor.value == "BBSS") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var FSR = document.createElement("option");
+                    FSR.text = "Fundamentals of stats in R";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+                    document.getElementById("course").add(FSR, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "BCDM") {
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(DM, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[1]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[2]);
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
+
+               } else if (document.aceitform.bachelor.value == "BAM") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+                    document.getElementById("course").add(other, document.getElementById("course")[1]);
+
+               } else if (document.aceitform.bachelor.value == "BPPLE") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(other, document.getElementById("course")[1]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+               } else if (document.aceitform.bachelor.value == "MDMA") {
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(DM, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[1]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[2]);
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
+               } else if (document.aceitform.bachelor.value == "MICE") {
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(CC, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "MIM") {
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(Econ, document.getElementById("course")[0]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "MBA") {
+                    var FP = document.createElement("option");
+                    FP.text = "Fundamentals of Python";
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of staticstics and Data Analysis"
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(FP, document.getElementById("course")[0]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[2]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[3]);
+                    document.getElementById("course").add(other, document.getElementById("course")[4]);
+
                } else if (document.aceitform.bachelor.value == "other") {
                     var PF = document.createElement("option");
                     PF.text = "Python Fundamentals";
@@ -148,25 +270,25 @@
                     MMBA.text = "Mathematics for Management and Business Analytics";
                     var AMB = document.createElement("option");
                     AMB.text = "Applied Business Mathematics";
-                    var FSR = document.createElement("option");
-                    FSR.text = "Fundamentals of stats in R";
-                    var ADS = document.createElement("option");
-                    ADS.text = "Algorithms and Data Structures";
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
                     var other = document.createElement("option");
                     other.text = "Other";
-
-                    document.getElementById("course").add(FSR, document.getElementById("course")[5]);
-                    document.getElementById("course").add(ADS, document.getElementById("course")[4]);
-
-                    document.getElementById("course").add(PF, document.getElementById("course")[0]);
-                    document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
-                    document.getElementById("course").add(MMBA, document.getElementById("course")[2]);
-                    document.getElementById("course").add(AMB, document.getElementById("course")[3]);
-                    document.getElementById("course").add(other, document.getElementById("course")[6]);
-
-
-
-
+                    document.getElementById("course").add(other, document.getElementById("course")[0]);
+                    document.getElementById("course").add(PF, document.getElementById("course")[1]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[2]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[3]);
+                    document.getElementById("course").add(AMB, document.getElementById("course")[4]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[5]);
+                    document.getElementById("course").add(DM, document.getElementById("course")[6]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[7]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[8]);
                }
           }
           function sendwp() {
@@ -717,7 +839,7 @@
                               <input class="form-control" type="text" name="name" id="name"
                                    placeholder="Enter your name" required>
                               <br><br>
-                              <label for="bachelor"> Bachelor: </label>
+                              <label for="bachelor"> Bachelor/Master:</label>
                               <select class="form-control" onchange="showcorresponding()" name="bachelor" id="bachelor"
                                    required>
                                    <option value="other" selected="other">Other</option>
@@ -727,8 +849,25 @@
                                         Relations
                                    </option>
                                    <option value="BIR" selected="BIR">Bachelor in International Relations</option>
+                                   <option value="BBSS" selected="BBSS">Bachelor in Behavioral and Social Sciences
+                                   </option>
                                    <option value="BIE" selected="BIE">Bachelor in Economics</option>
-                                   <option value="" selected="">Select a bachelor</option>
+                                   <option value="BCSAI" selected="BCSAI">Bachelor in CS and AI</option>
+                                   <option value="BIE" selected="BIE">Bachelor in Communication and Digital Media
+                                   </option>
+                                   <option value="BIAM" selected="BIAM">Bachelor in Applied Mathematics</option>
+                                   <option value="BIE" selected="BIE">Bachelor in Economics</option>
+                                   <option value="BPPLE" selected="BPPLE">Bachelor in Philosophy,Politics,Law and
+                                        Economics
+                                   </option>
+                                   <option value="MDMA" selected="MDMA">Master in Digital Marketing and Analytics
+                                   </option>
+                                   <option value="MICE" selected="MICE">Master in Customer Experience and Innnovation
+                                   </option>
+                                   <option value="MIM" selected="MIM">Master in Management</option>
+                                   <option value="MBA" selected="MBA">International MBA</option>
+                                   <option value="MTD" selected="MTD">Master in Technology and Data</option>
+                                   <option value="" selected="">Select a bachelor/master</option>
                               </select>
                               <br><br>
                               <label for="course">Course:</label>
