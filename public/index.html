@@ -101,43 +101,166 @@
                     MMBA.text = "Mathematics for Management and Business Analytics";
                     var AMB = document.createElement("option");
                     AMB.text = "Applied Business Mathematics";
-
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(PF, document.getElementById("course")[0]);
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
                     document.getElementById("course").add(MMBA, document.getElementById("course")[2]);
                     document.getElementById("course").add(AMB, document.getElementById("course")[3]);
+                    document.getElementById("course").add(other, document.getElementById("course")[4]);
 
                } else if (document.aceitform.bachelor.value == "BDBA") {
                     var FSR = document.createElement("option");
                     FSR.text = "Fundamentals of stats in R";
-                    var ADS = document.createElement("option");
-                    ADS.text = "Algorithms and Data Structures";
-
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var PF = document.createElement("option");
+                    PF.text = "Python Fundamentals";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
                     document.getElementById("course").add(FSR, document.getElementById("course")[0]);
-                    document.getElementById("course").add(ADS, document.getElementById("course")[1]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[1]);
+                    document.getElementById("course").add(PF, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BBABIR") {
                     var FSP = document.createElement("option");
                     FSP.text = "Fundamentals of statistics in Python";
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(FSP, document.getElementById("course")[0]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BIE") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     var Econ = document.createElement("option");
                     Econ.text = "Econometrics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     document.getElementById("course").add(Econ, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
                } else if (document.aceitform.bachelor.value == "BIR") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     var FSPD = document.createElement("option");
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    document.getElementById("course").add(Econ, document.getElementById("course")[2]);
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
                } else if (document.aceitform.bachelor.value == "BDA") {
                     var FP = document.createElement("option");
                     FP.text = "Fundamentals of Python";
                     document.getElementById("course").add(FP, document.getElementById("course")[0]);
                     var FSPD = document.createElement("option");
                     document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+               } else if (document.aceitform.bachelor.value == "BBSS") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var FSR = document.createElement("option");
+                    FSR.text = "Fundamentals of stats in R";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+                    document.getElementById("course").add(FSR, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "BCDM") {
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(DM, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[1]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[2]);
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
+
+               } else if (document.aceitform.bachelor.value == "BAM") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+                    document.getElementById("course").add(other, document.getElementById("course")[1]);
+
+               } else if (document.aceitform.bachelor.value == "BPPLE") {
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of Statistics and Data Analysis";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(other, document.getElementById("course")[1]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[0]);
+               } else if (document.aceitform.bachelor.value == "MDMA") {
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(DM, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[1]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[2]);
+                    document.getElementById("course").add(other, document.getElementById("course")[3]);
+               } else if (document.aceitform.bachelor.value == "MICE") {
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+                    document.getElementById("course").add(CC, document.getElementById("course")[0]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "MIM") {
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(Econ, document.getElementById("course")[0]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[1]);
+                    document.getElementById("course").add(other, document.getElementById("course")[2]);
+
+               } else if (document.aceitform.bachelor.value == "MBA") {
+                    var FP = document.createElement("option");
+                    FP.text = "Fundamentals of Python";
+                    var FSPD = document.createElement("option");
+                    FSPD.text = "Fundamentals of staticstics and Data Analysis"
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var MMBA = document.createElement("option");
+                    MMBA.text = "Mathematics for Management and Business Analytics";
+                    var other = document.createElement("option");
+                    other.text = "Other";
+
+                    document.getElementById("course").add(FP, document.getElementById("course")[0]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[2]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[3]);
+                    document.getElementById("course").add(other, document.getElementById("course")[4]);
+
                } else if (document.aceitform.bachelor.value == "other") {
                     var PF = document.createElement("option");
                     PF.text = "Python Fundamentals";
@@ -147,34 +270,59 @@
                     MMBA.text = "Mathematics for Management and Business Analytics";
                     var AMB = document.createElement("option");
                     AMB.text = "Applied Business Mathematics";
-                    var FSR = document.createElement("option");
-                    FSR.text = "Fundamentals of stats in R";
-                    var ADS = document.createElement("option");
-                    ADS.text = "Algorithms and Data Structures";
+                    var Econ = document.createElement("option");
+                    Econ.text = "Econometrics";
+                    var DM = document.createElement("option");
+                    DM.text = "Digital Marketing";
+                    var CC = document.createElement("option");
+                    CC.text = "Customer centricity";
+                    var CB = document.createElement("option");
+                    CB.text = "Customer Behaviour";
                     var other = document.createElement("option");
                     other.text = "Other";
-
-                    document.getElementById("course").add(FSR, document.getElementById("course")[5]);
-                    document.getElementById("course").add(ADS, document.getElementById("course")[4]);
-
-                    document.getElementById("course").add(PF, document.getElementById("course")[0]);
-                    document.getElementById("course").add(FSPD, document.getElementById("course")[1]);
-                    document.getElementById("course").add(MMBA, document.getElementById("course")[2]);
-                    document.getElementById("course").add(AMB, document.getElementById("course")[3]);
-                    document.getElementById("course").add(other, document.getElementById("course")[6]);
-
-
-
-
+                    document.getElementById("course").add(other, document.getElementById("course")[0]);
+                    document.getElementById("course").add(PF, document.getElementById("course")[1]);
+                    document.getElementById("course").add(FSPD, document.getElementById("course")[2]);
+                    document.getElementById("course").add(MMBA, document.getElementById("course")[3]);
+                    document.getElementById("course").add(AMB, document.getElementById("course")[4]);
+                    document.getElementById("course").add(Econ, document.getElementById("course")[5]);
+                    document.getElementById("course").add(DM, document.getElementById("course")[6]);
+                    document.getElementById("course").add(CC, document.getElementById("course")[7]);
+                    document.getElementById("course").add(CB, document.getElementById("course")[8]);
                }
+          }
+          function godown() {
+               window.scrollTo(0, 2500)
+          }
+          window.smoothScroll = function (target) {
+               var scrollContainer = target;
+               do { //find scroll container
+                    scrollContainer = scrollContainer.parentNode;
+                    if (!scrollContainer) return;
+                    scrollContainer.scrollTop += 1;
+               } while (scrollContainer.scrollTop == 0);
+
+               var targetY = 0;
+               do { //find the top of target relatively to the container
+                    if (target == scrollContainer) break;
+                    targetY += target.offsetTop;
+               } while (target = target.offsetParent);
+
+               scroll = function (c, a, b, i) {
+                    i++; if (i > 30) return;
+                    c.scrollTop = a + (b - a) / 30 * i;
+                    setTimeout(function () { scroll(c, a, b, i); }, 20);
+               }
+               // start scrolling
+               scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
           }
           function sendwp() {
                if (document.aceitform.course.value.length > 1 && document.aceitform.bachelor.value.length > 1) {
                     var bachelor = document.aceitform.bachelor.value
                     var course = document.aceitform.course.value
-                    
-                    
-                    var link1 = "https://wa.me/34638788265?text=Hi%20there,%20I%20do%20the%20bachelor%20of%20" + bachelor + "%20and%20Im%20Interested%20in%20the%20course%20of%20" + course
+
+
+                    var link1 = "https://wa.me/34603329651?text=Hi%20there,%20I%20do%20the%20bachelor%20of%20" + bachelor + "%20and%20Im%20Interested%20in%20the%20course%20of%20" + course
                     window.location.href = link1
                }
           }
@@ -214,15 +362,15 @@
                          <li><a href="#top" class="smoothScroll">Home</a></li>
                          <li><a href="#courses" class="smoothScroll">Courses</a></li>
                          <li><a href="#team" class="smoothScroll">Our Teachers</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                         <li><a href="#Join-course" class="smoothScroll">Contact</a></li>
                          <li><a href="#Join-course" class="smoothScroll">Join</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                          <li><a
-                              href="https://wa.me/34638788265?text=Hi%20there,%20Can%20you%20tell%20me%20more%20about%20the%20availability%20on%20the%20academy?"><i
-                              class="fa fa-phone"></i> +34 638 788 265</a></li>
-                         </ul>
+                                   href="https://wa.me/34603329651?text=Hi%20there,%20Can%20you%20tell%20me%20more%20about%20the%20availability%20on%20the%20academy?"><i
+                                        class="fa fa-phone"></i> +34 603 329 651</a></li>
+                    </ul>
                </div>
           </div>
      </section>
@@ -329,7 +477,7 @@
           </div>
      </section>
 
-     <img src="./images/wave-haikei.svg" alt="My Happy SVG" style="width: 100%;"  />
+     <img src="./images/wave-haikei.svg" alt="My Happy SVG" style="width: 100%;" />
 
      <!-- Courses -->
      <section id="courses">
@@ -341,7 +489,8 @@
                                         help you ace your exams.</small></h2>
                          </div>
                          <div class="join">
-                              <a href="#contact" class="section-btn btn btn-default smoothScroll">Join Course</a>
+                              <a onclick="smoothScroll(document.getElementById('Join-course'))"
+                                   class="section-btn btn btn-default smoothScroll">Join Course</a>
                          </div>
 
                          <div class="owl-carousel owl-theme owl-courses">
@@ -485,7 +634,7 @@
                                                   <p><br>Learn about DSA taught by students who have used this to pass
                                                        real interviews.</p>
                                              </div>
-<!--
+                                             <!--
                                              <div class="courses-info">
                                                   <div class="courses-author">
                                                        <img src="images/author-image1.jpg" class="img-responsive"
@@ -522,7 +671,7 @@
                                                   <h3><a href="#">Math For Management & Analysis</a></h3>
                                                   <p><br>Ace the mathematics class from DBA and BBADBA.</p>
                                              </div>
-<!--
+                                             <!--
                                              <div class="courses-info">
                                                   <div class="courses-author">
                                                        <img src="images/author-image1.jpg" class="img-responsive"
@@ -562,7 +711,7 @@
                                                   <p><br>Learn how to conduct statistical analysis of data in python.
                                                   </p>
                                              </div>
-<!--
+                                             <!--
                                              <div class="courses-info">
                                                   <div class="courses-author">
                                                        <img src="images/author-image2.jpg" class="img-responsive"
@@ -598,7 +747,7 @@
                                                   <h3><a href="#">Fundamentals of Statistics & Probability (R)</a></h3>
                                                   <p><br>Learn how to conduct statistical analysis of data in R.</p>
                                              </div>
-<!--
+                                             <!--
                                              <div class="courses-info">
                                                   <div class="courses-author">
                                                        <img src="images/author-image3.png" class="img-responsive"
@@ -625,7 +774,8 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title">
-                              <h2> <em> <small id="numberprofesors">We have +10 teachers that have studied at IE.</small></em></h2>
+                              <h2> <em> <small id="numberprofesors">We have +10 teachers that have studied at
+                                             IE.</small></em></h2>
                          </div>
                     </div>
 
@@ -678,7 +828,7 @@
                               <div class="team-info">
                                    <h3><a href="https://www.linkedin.com/in/yahya-laraqui-houssaini-077240206/"
                                              target=”_blank”>Yahya Laraqui</a></h3>
-                                   <span><br>Winner - 2 Data competitions!</span>
+                                   <span><br>Winner - 3 Data competitions!</span>
                                    <span><br>Expert in coding & statistics </span>
                               </div>
                          </div>
@@ -715,7 +865,7 @@
                               <input class="form-control" type="text" name="name" id="name"
                                    placeholder="Enter your name" required>
                               <br><br>
-                              <label for="bachelor"> Bachelor: </label>
+                              <label for="bachelor"> Bachelor/Master:</label>
                               <select class="form-control" onchange="showcorresponding()" name="bachelor" id="bachelor"
                                    required>
                                    <option value="other" selected="other">Other</option>
@@ -725,8 +875,25 @@
                                         Relations
                                    </option>
                                    <option value="BIR" selected="BIR">Bachelor in International Relations</option>
+                                   <option value="BBSS" selected="BBSS">Bachelor in Behavioral and Social Sciences
+                                   </option>
                                    <option value="BIE" selected="BIE">Bachelor in Economics</option>
-                                   <option value="" selected="">Select a bachelor</option>
+                                   <option value="BCSAI" selected="BCSAI">Bachelor in CS and AI</option>
+                                   <option value="BIE" selected="BIE">Bachelor in Communication and Digital Media
+                                   </option>
+                                   <option value="BIAM" selected="BIAM">Bachelor in Applied Mathematics</option>
+                                   <option value="BIE" selected="BIE">Bachelor in Economics</option>
+                                   <option value="BPPLE" selected="BPPLE">Bachelor in Philosophy,Politics,Law and
+                                        Economics
+                                   </option>
+                                   <option value="MDMA" selected="MDMA">Master in Digital Marketing and Analytics
+                                   </option>
+                                   <option value="MICE" selected="MICE">Master in Customer Experience and Innnovation
+                                   </option>
+                                   <option value="MIM" selected="MIM">Master in Management</option>
+                                   <option value="MBA" selected="MBA">International MBA</option>
+                                   <option value="MTD" selected="MTD">Master in Technology and Data</option>
+                                   <option value="" selected="">Select a bachelor/master</option>
                               </select>
                               <br><br>
                               <label for="course">Course:</label>
@@ -735,15 +902,16 @@
                               </select>
                               <br><br>
                               <div style="padding-bottom: 10%;">
-                              <textarea class="form-control" rows="6" placeholder="Tell us any additional information"
-                                   name="message" style="height: 50px;"></textarea>
+                                   <textarea class="form-control" rows="6"
+                                        placeholder="Tell us any additional information" name="message"
+                                        style="height: 50px;"></textarea>
                               </div>
-                         <div class="col-sm-12">
-                              <div id="sumbitnext">
-                              <a id="submit" onclick="sendwp()"> submit </a>
+                              <div class="col-sm-12">
+                                   <div id="sumbitnext">
+                                        <a id="submit" onclick="sendwp()"> submit </a>
+                                   </div>
                               </div>
                          </div>
-                    </div>
 
                     </form>
                </div>
