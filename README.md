@@ -13,4 +13,4 @@ Our online courses are designed to help students understand all of the class con
 
 ### Website Walkthrough
 
-https://github.com/dsanmart/TutoringAcademy/Recording_AceItEasy.com.mp4
+https://github.com/dsanmart/TutoringAcademy/assets/92187824/80e5ae1f-6878-4713-99f1-07153fc6bfb9
